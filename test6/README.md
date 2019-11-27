@@ -422,8 +422,6 @@ PROCEDURE get_apartment_total(dt1 char,dt2 char)
     b1 NUMBER;
     c1 NUMBER;
     d1 NUMBER;
-    e1 NUMBER;
-    f1 NUMBER;
     cursor cur is
       select * from REGISTRATION_FORM where REGISTRATION_DATE >= to_date(dt1,'yyyy-mm-dd hh24:mi:ss')
       and REGISTRATION_DATE <= to_date(dt2,'yyyy-mm-dd hh24:mi:ss');
